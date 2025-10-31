@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Mental Health Journal</title>
   </head>
@@ -11,7 +12,7 @@
       <header><h1>AI Mental Health Journal.</h1></header>
 
       <main>
-        <form>
+        <form id="response-generator-form">
           <input
             type="text"
             placeholder="What do you want to talk about?"
@@ -22,12 +23,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          That’s a lovely moment small gestures like that remind us that care
-          often hides in simple acts.
-          <br />
-          Holding on to those feelings of warmth can help brighten your day.
-        </div>
+        <div class="response" id="response"></div>
       </main>
     </div>
 
