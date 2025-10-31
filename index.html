@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" src="scr/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Mental Health Journal</title>
   </head>
   <body>
-    <h1>AI Mental Health Journal.</h1>
+    <div class="container">
+      <header><h1>AI Mental Health Journal.</h1></header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What do you want to talk about?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        That’s a lovely moment small gestures like that remind us that care
-        often hides in simple acts.
-        <br />
-        Holding on to those feelings of warmth can help brighten your day.
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="What do you want to talk about?"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          That’s a lovely moment small gestures like that remind us that care
+          often hides in simple acts.
+          <br />
+          Holding on to those feelings of warmth can help brighten your day.
+        </div>
+      </main>
+    </div>
 
     <footer>
       This AI project was coded by
