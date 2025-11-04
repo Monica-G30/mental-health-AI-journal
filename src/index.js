@@ -23,10 +23,6 @@ function generateResponse(event) {
       Generating a response about ${instructionsInput.value}
     </div> `;
 
-  console.log("Generating response");
-  console.log(`Prompt ${prompt}`);
-  console.log(`Context ${context}`);
-
   axios.get(apiURL).then(displayPoem);
 }
 
