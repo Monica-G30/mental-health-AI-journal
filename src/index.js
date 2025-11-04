@@ -17,6 +17,12 @@ function generateResponse(event) {
   let prompt = `Generate a response about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let responseElement = document.querySelector("#response");
+  responseElement.classList.remove("hidden");
+  responseElement.innerHTML = `<div class="generating">
+      Generating a response about ${instructionsInput.value}
+    </div> `;
+
   console.log("Generating response");
   console.log(`Prompt ${prompt}`);
   console.log(`Context ${context}`);
